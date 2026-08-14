@@ -1,0 +1,3 @@
+# SaaS Admin Pro — protected product structure
+
+Pro is intentionally not included as a public downloadable product. The preserved specification calls for revenue, customers, subscriptions, invoices, analytics, team, login/signup UI, onboarding, plans/billing, usage/limits, API-key UI, integrations, notifications, audit logs, and responsive navigation. Before selling Pro, implement and verify authentication, authorization, database storage, payments, protected delivery, email, analytics, secrets handling, rate limits, backups, and privacy/legal updates. UI labels must not imply that an unconnected service is live.

@@ -1,0 +1,511 @@
+{
+  "tools": [
+    {
+      "slug": "mrr-calculator",
+      "name": "MRR Calculator",
+      "category": "Finance",
+      "description": "Calculate monthly recurring revenue from customers and average revenue."
+    },
+    {
+      "slug": "arr-calculator",
+      "name": "ARR Calculator",
+      "category": "Finance",
+      "description": "Convert recurring monthly revenue into annual recurring revenue."
+    },
+    {
+      "slug": "churn-rate-calculator",
+      "name": "Churn Rate Calculator",
+      "category": "Finance",
+      "description": "Measure customer or revenue churn for a period."
+    },
+    {
+      "slug": "customer-lifetime-value-calculator",
+      "name": "Customer Lifetime Value Calculator",
+      "category": "Finance",
+      "description": "Estimate customer lifetime value from revenue and retention inputs."
+    },
+    {
+      "slug": "customer-acquisition-cost-calculator",
+      "name": "Customer Acquisition Cost Calculator",
+      "category": "Marketing",
+      "description": "Calculate acquisition cost per new customer."
+    },
+    {
+      "slug": "break-even-calculator",
+      "name": "Break-even Calculator",
+      "category": "Finance",
+      "description": "Estimate the units required to cover fixed costs."
+    },
+    {
+      "slug": "profit-margin-calculator",
+      "name": "Profit Margin Calculator",
+      "category": "Finance",
+      "description": "Calculate gross profit and profit margin."
+    },
+    {
+      "slug": "markup-calculator",
+      "name": "Markup Calculator",
+      "category": "Finance",
+      "description": "Calculate selling price and markup from cost."
+    },
+    {
+      "slug": "roi-calculator",
+      "name": "ROI Calculator",
+      "category": "Finance",
+      "description": "Measure return on an investment."
+    },
+    {
+      "slug": "cash-runway-calculator",
+      "name": "Cash Runway Calculator",
+      "category": "Finance",
+      "description": "Estimate how many months current cash will last."
+    },
+    {
+      "slug": "burn-rate-calculator",
+      "name": "Burn Rate Calculator",
+      "category": "Finance",
+      "description": "Calculate average monthly net cash burn."
+    },
+    {
+      "slug": "hourly-rate-calculator",
+      "name": "Hourly Rate Calculator",
+      "category": "Freelancer",
+      "description": "Turn an income goal into a sustainable hourly rate."
+    },
+    {
+      "slug": "freelance-project-rate-calculator",
+      "name": "Freelance Project Rate Calculator",
+      "category": "Freelancer",
+      "description": "Price a project from time, costs, and profit buffer."
+    },
+    {
+      "slug": "salary-to-hourly-calculator",
+      "name": "Salary to Hourly Calculator",
+      "category": "Finance",
+      "description": "Convert annual salary into an hourly equivalent."
+    },
+    {
+      "slug": "sales-tax-calculator",
+      "name": "Sales Tax Calculator",
+      "category": "Finance",
+      "description": "Estimate sales tax and total price."
+    },
+    {
+      "slug": "discount-calculator",
+      "name": "Discount Calculator",
+      "category": "Ecommerce",
+      "description": "Calculate discount savings and final price."
+    },
+    {
+      "slug": "shipping-profit-calculator",
+      "name": "Shipping Profit Calculator",
+      "category": "Ecommerce",
+      "description": "Estimate order profit after product, shipping, and fees."
+    },
+    {
+      "slug": "etsy-fee-calculator",
+      "name": "Marketplace Fee Calculator",
+      "category": "Ecommerce",
+      "description": "Estimate marketplace fees and net proceeds."
+    },
+    {
+      "slug": "average-order-value-calculator",
+      "name": "Average Order Value Calculator",
+      "category": "Ecommerce",
+      "description": "Calculate average revenue per order."
+    },
+    {
+      "slug": "cart-abandonment-loss-calculator",
+      "name": "Cart Abandonment Loss Calculator",
+      "category": "Ecommerce",
+      "description": "Estimate revenue left in abandoned carts."
+    },
+    {
+      "slug": "conversion-rate-calculator",
+      "name": "Conversion Rate Calculator",
+      "category": "Marketing",
+      "description": "Calculate conversion rate from visitors and conversions."
+    },
+    {
+      "slug": "roas-calculator",
+      "name": "ROAS Calculator",
+      "category": "Marketing",
+      "description": "Measure revenue returned per advertising dollar."
+    },
+    {
+      "slug": "cpm-calculator",
+      "name": "CPM Calculator",
+      "category": "Marketing",
+      "description": "Calculate advertising cost per thousand impressions."
+    },
+    {
+      "slug": "cpc-calculator",
+      "name": "CPC Calculator",
+      "category": "Marketing",
+      "description": "Calculate average cost per click."
+    },
+    {
+      "slug": "email-open-rate-calculator",
+      "name": "Email Open Rate Calculator",
+      "category": "Marketing",
+      "description": "Calculate email open rate from delivered and opened messages."
+    },
+    {
+      "slug": "email-click-rate-calculator",
+      "name": "Email Click Rate Calculator",
+      "category": "Marketing",
+      "description": "Calculate click-through rate from delivered emails and clicks."
+    },
+    {
+      "slug": "social-engagement-rate-calculator",
+      "name": "Social Engagement Rate Calculator",
+      "category": "Marketing",
+      "description": "Measure engagement against audience or reach."
+    },
+    {
+      "slug": "word-counter",
+      "name": "Word Counter",
+      "category": "Content",
+      "description": "Count words, characters, sentences, and reading time locally."
+    },
+    {
+      "slug": "reading-time-calculator",
+      "name": "Reading Time Calculator",
+      "category": "Content",
+      "description": "Estimate reading time for written content."
+    },
+    {
+      "slug": "utm-builder",
+      "name": "UTM Campaign URL Builder",
+      "category": "Marketing",
+      "description": "Build a tagged campaign URL without sending data anywhere."
+    },
+    {
+      "slug": "invoice-number-generator",
+      "name": "Invoice Number Generator",
+      "category": "Operations",
+      "description": "Create a customizable invoice reference locally."
+    },
+    {
+      "slug": "business-name-generator",
+      "name": "Business Name Generator",
+      "category": "Operations",
+      "description": "Generate structured business-name ideas from keywords."
+    },
+    {
+      "slug": "slogan-generator",
+      "name": "Slogan Generator",
+      "category": "Marketing",
+      "description": "Generate concise slogan directions from a brand promise."
+    },
+    {
+      "slug": "email-subject-checker",
+      "name": "Email Subject Line Checker",
+      "category": "Marketing",
+      "description": "Check subject length, clarity, and common risk signals."
+    },
+    {
+      "slug": "startup-cost-calculator",
+      "name": "Startup Cost Calculator",
+      "category": "Operations",
+      "description": "Add one-time and monthly startup costs."
+    },
+    {
+      "slug": "meeting-cost-calculator",
+      "name": "Meeting Cost Calculator",
+      "category": "Operations",
+      "description": "Estimate the true labor cost of a meeting."
+    },
+    {
+      "slug": "employee-cost-calculator",
+      "name": "Employee Cost Calculator",
+      "category": "Operations",
+      "description": "Estimate loaded employee cost beyond base pay."
+    },
+    {
+      "slug": "contractor-estimate-calculator",
+      "name": "Contractor Estimate Calculator",
+      "category": "Contractor",
+      "description": "Build a labor, material, overhead, and profit estimate."
+    },
+    {
+      "slug": "job-profit-calculator",
+      "name": "Job Profit Calculator",
+      "category": "Contractor",
+      "description": "Estimate job profit and margin."
+    },
+    {
+      "slug": "material-waste-calculator",
+      "name": "Material Waste Calculator",
+      "category": "Contractor",
+      "description": "Add a waste allowance to material quantities."
+    },
+    {
+      "slug": "square-footage-calculator",
+      "name": "Square Footage Calculator",
+      "category": "Contractor",
+      "description": "Calculate rectangular project area."
+    },
+    {
+      "slug": "paint-calculator",
+      "name": "Paint Calculator",
+      "category": "Contractor",
+      "description": "Estimate paint quantity from area and coverage."
+    },
+    {
+      "slug": "loan-payment-calculator",
+      "name": "Business Loan Payment Calculator",
+      "category": "Finance",
+      "description": "Estimate a fixed monthly business-loan payment."
+    },
+    {
+      "slug": "simple-interest-calculator",
+      "name": "Simple Interest Calculator",
+      "category": "Finance",
+      "description": "Calculate simple interest and final balance."
+    },
+    {
+      "slug": "compound-growth-calculator",
+      "name": "Compound Growth Calculator",
+      "category": "Finance",
+      "description": "Project compound growth over time."
+    },
+    {
+      "slug": "inventory-turnover-calculator",
+      "name": "Inventory Turnover Calculator",
+      "category": "Ecommerce",
+      "description": "Measure how often inventory sells through."
+    },
+    {
+      "slug": "reorder-point-calculator",
+      "name": "Reorder Point Calculator",
+      "category": "Ecommerce",
+      "description": "Estimate when inventory should be reordered."
+    },
+    {
+      "slug": "capacity-planner",
+      "name": "Team Capacity Planner",
+      "category": "Operations",
+      "description": "Estimate usable weekly team capacity."
+    },
+    {
+      "slug": "project-timeline-calculator",
+      "name": "Project Timeline Calculator",
+      "category": "Operations",
+      "description": "Estimate delivery duration from work and capacity."
+    },
+    {
+      "slug": "support-staffing-calculator",
+      "name": "Support Staffing Calculator",
+      "category": "Operations",
+      "description": "Estimate support workload and staffing demand."
+    },
+    {
+      "slug": "missed-call-revenue-calculator",
+      "name": "Missed Call Revenue Calculator",
+      "category": "Lead & Automation",
+      "description": "Estimate monthly and annual opportunity from unanswered calls."
+    },
+    {
+      "slug": "lead-conversion-calculator",
+      "name": "Lead Conversion Calculator",
+      "category": "Lead & Automation",
+      "description": "Calculate lead-to-customer conversion rate."
+    },
+    {
+      "slug": "cost-per-lead-calculator",
+      "name": "Cost Per Lead Calculator",
+      "category": "Lead & Automation",
+      "description": "Calculate marketing cost for each generated lead."
+    },
+    {
+      "slug": "lead-value-calculator",
+      "name": "Lead Value Calculator",
+      "category": "Lead & Automation",
+      "description": "Estimate expected value per lead."
+    },
+    {
+      "slug": "lead-response-time-calculator",
+      "name": "Lead Response Time Calculator",
+      "category": "Lead & Automation",
+      "description": "Measure average response time and avoidable delay."
+    },
+    {
+      "slug": "automation-roi-calculator",
+      "name": "Automation ROI Calculator",
+      "category": "Lead & Automation",
+      "description": "Estimate savings, payback, and return from automation."
+    },
+    {
+      "slug": "employee-hours-saved-calculator",
+      "name": "Employee Hours Saved Calculator",
+      "category": "Lead & Automation",
+      "description": "Value the time saved by a process improvement."
+    },
+    {
+      "slug": "ai-receptionist-cost-calculator",
+      "name": "AI Receptionist Cost Calculator",
+      "category": "Lead & Automation",
+      "description": "Compare current call-handling cost with a proposed service."
+    }
+  ],
+  "skills": [
+    {
+      "slug": "website-audit-pro",
+      "name": "Website Audit Pro",
+      "description": "Audit websites with evidence-based SEO, UX, accessibility, and performance findings."
+    },
+    {
+      "slug": "frontend-ui-expert",
+      "name": "Frontend UI Expert",
+      "description": "Build and review polished, responsive, accessible interfaces."
+    },
+    {
+      "slug": "nextjs-production-expert",
+      "name": "Next.js Production Expert",
+      "description": "Prepare Next.js applications for reliable production delivery."
+    },
+    {
+      "slug": "seo-audit-fix",
+      "name": "SEO Audit & Fix",
+      "description": "Find technical and on-page SEO issues, then verify repairs."
+    },
+    {
+      "slug": "saas-builder",
+      "name": "SaaS Builder",
+      "description": "Plan and implement maintainable SaaS product foundations."
+    },
+    {
+      "slug": "code-review-pro",
+      "name": "Code Review Pro",
+      "description": "Review changes for correctness, risk, security, and maintainability."
+    },
+    {
+      "slug": "github-pr-reviewer",
+      "name": "GitHub PR Reviewer",
+      "description": "Produce prioritized, actionable pull-request feedback."
+    },
+    {
+      "slug": "browser-automation",
+      "name": "Browser Automation",
+      "description": "Design robust browser workflows with verification and recovery."
+    },
+    {
+      "slug": "landing-page-cro",
+      "name": "Landing Page CRO",
+      "description": "Improve landing-page clarity, trust, and conversion paths."
+    },
+    {
+      "slug": "saas-dashboard-builder",
+      "name": "SaaS Dashboard Builder",
+      "description": "Build reusable admin dashboards and operational views."
+    },
+    {
+      "slug": "stripe-saas-setup",
+      "name": "Stripe SaaS Setup",
+      "description": "Plan safe subscription billing integration and validation."
+    },
+    {
+      "slug": "supabase-builder",
+      "name": "Supabase Builder",
+      "description": "Design secure Supabase schemas, policies, and application flows."
+    },
+    {
+      "slug": "deployment-checker",
+      "name": "Deployment Checker",
+      "description": "Verify production readiness, configuration, and rollback paths."
+    },
+    {
+      "slug": "database-schema-designer",
+      "name": "Database Schema Designer",
+      "description": "Create normalized, scalable schemas with explicit constraints."
+    },
+    {
+      "slug": "api-builder",
+      "name": "API Builder",
+      "description": "Design predictable APIs with validation, errors, and documentation."
+    },
+    {
+      "slug": "security-auditor",
+      "name": "Security Auditor",
+      "description": "Perform scoped defensive reviews and report verifiable risks."
+    },
+    {
+      "slug": "accessibility-auditor",
+      "name": "Accessibility Auditor",
+      "description": "Evaluate accessible structure, interaction, and content."
+    },
+    {
+      "slug": "performance-optimizer",
+      "name": "Performance Optimizer",
+      "description": "Measure and improve web performance without guesswork."
+    },
+    {
+      "slug": "ecommerce-builder",
+      "name": "Ecommerce Builder",
+      "description": "Plan reliable catalogs, carts, checkout, and operations."
+    },
+    {
+      "slug": "email-marketing-planner",
+      "name": "Email Marketing Planner",
+      "description": "Create permission-based email campaign plans and QA."
+    },
+    {
+      "slug": "sales-outreach-planner",
+      "name": "Sales Outreach Planner",
+      "description": "Build respectful, targeted outreach workflows and messaging."
+    },
+    {
+      "slug": "competitor-research",
+      "name": "Competitor Research",
+      "description": "Gather source-backed competitive evidence and implications."
+    },
+    {
+      "slug": "content-seo-writer",
+      "name": "Content SEO Writer",
+      "description": "Create useful search-focused content with factual safeguards."
+    },
+    {
+      "slug": "business-plan-builder",
+      "name": "Business Plan Builder",
+      "description": "Turn assumptions into a concise, testable business plan."
+    },
+    {
+      "slug": "automation-workflow-designer",
+      "name": "Automation Workflow Designer",
+      "description": "Map repetitive work into observable, recoverable automations."
+    }
+  ],
+  "dashboards": [
+    {
+      "slug": "saas-admin-dashboard",
+      "name": "SaaS Admin Dashboard",
+      "description": "A reusable SaaS operations workspace with a free starter and a separately protected Pro structure."
+    },
+    {
+      "slug": "crm-dashboard",
+      "name": "CRM Dashboard",
+      "description": "Lead, pipeline, account, and activity views built on the shared dashboard system."
+    },
+    {
+      "slug": "ecommerce-dashboard",
+      "name": "Ecommerce Dashboard",
+      "description": "Orders, products, customers, inventory, and commerce KPI views."
+    },
+    {
+      "slug": "ai-saas-dashboard",
+      "name": "AI SaaS Dashboard",
+      "description": "Usage, model cost, limits, customers, and AI product operations."
+    },
+    {
+      "slug": "agency-dashboard",
+      "name": "Agency Dashboard",
+      "description": "Clients, projects, capacity, retainers, and agency performance."
+    },
+    {
+      "slug": "finance-dashboard",
+      "name": "Finance Dashboard",
+      "description": "Cash flow, revenue, expenses, forecasts, and finance operations."
+    }
+  ]
+}
