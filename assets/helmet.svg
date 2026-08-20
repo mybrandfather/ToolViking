@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">ToolViking helmet</title>
+  <path d="M18 28C18 17 24 10 32 10s14 7 14 18v18H18V28Z" fill="#0b1726" stroke="#f2b84b" stroke-width="3"/>
+  <path d="M32 11v35M19 31h26" fill="none" stroke="#dff7ff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M18 25C10 24 6 18 7 11c4 6 9 7 15 5M46 25c8-1 12-7 11-14-4 6-9 7-15 5" fill="#0b1726" stroke="#f2b84b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 46h36" stroke="#f2b84b" stroke-width="4" stroke-linecap="round"/>
+</svg>
