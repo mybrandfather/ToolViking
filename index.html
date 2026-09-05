@@ -12,7 +12,34 @@
 <main id="main">
   <section class="hero home-hero"><div class="wrap hero-grid">
     <div><div class="eyebrow">Business tools, forged for action</div><h1>The business toolkit built to <span class="accent">launch, run, and grow.</span></h1><p>Free business tools, premium dashboard products, and practical Agent Skills for entrepreneurs, freelancers, agencies, contractors, ecommerce sellers, SaaS founders, and small teams.</p><div class="actions"><a class="btn" href="/tools/">Explore free tools →</a><a class="btn secondary" href="/dashboards/">Browse dashboards</a></div><div class="trust-row" aria-label="Free tool benefits"><span>No signup for free tools</span><span>Inputs stay in your browser</span><span>58 working tools</span></div></div>
-    <div class="hero-console" aria-label="Sample business dashboard using demonstration data"><div class="console-top"><span>SAMPLE BUSINESS DASHBOARD</span><span class="demo-badge">Demo data</span></div><div class="metric-grid"><div class="metric"><small>Monthly revenue</small><strong class="gold">$48.2k</strong><em>Sample</em></div><div class="metric"><small>Qualified leads</small><strong>184</strong><em>Sample</em></div><div class="metric"><small>Conversion</small><strong>18.4%</strong><em>Sample</em></div><div class="metric"><small>Automation savings</small><strong>$6.8k</strong><em>Sample</em></div></div><div class="chart-label"><span>Operating momentum</span><span>Illustrative</span></div><div class="mini-chart"><svg viewBox="0 0 420 110" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f2b84b"/><stop offset="1" stop-color="#71d8ff"/></linearGradient></defs><path d="M0 88 C35 80 52 86 82 67 S135 42 165 55 S218 73 248 44 S305 27 334 37 S378 23 420 12" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/></svg></div></div>
+    <div class="hero-showcase" data-tool-showcase aria-label="Interactive previews of ToolViking tools">
+      <div class="showcase-top"><div><span class="showcase-kicker">ToolViking live preview</span><strong>Choose a tool</strong></div><span class="demo-badge">Example data</span></div>
+      <div class="showcase-tabs" role="tablist" aria-label="Tool previews">
+        <button class="showcase-tab active" id="demo-tab-0" role="tab" aria-selected="true" aria-controls="demo-panel-0" data-demo-tab="0" type="button"><span>01</span>Words</button>
+        <button class="showcase-tab" id="demo-tab-1" role="tab" aria-selected="false" aria-controls="demo-panel-1" data-demo-tab="1" type="button"><span>02</span>MRR</button>
+        <button class="showcase-tab" id="demo-tab-2" role="tab" aria-selected="false" aria-controls="demo-panel-2" data-demo-tab="2" type="button"><span>03</span>ROI</button>
+        <button class="showcase-tab" id="demo-tab-3" role="tab" aria-selected="false" aria-controls="demo-panel-3" data-demo-tab="3" type="button"><span>04</span>Quote</button>
+      </div>
+      <div class="showcase-stage">
+        <article class="showcase-slide active" id="demo-panel-0" role="tabpanel" aria-labelledby="demo-tab-0" data-demo-slide="0">
+          <div class="showcase-heading"><div><span class="tag">Content utility</span><h2>Word Counter</h2></div><a href="/tools/word-counter/">Open tool <span aria-hidden="true">→</span></a></div>
+          <div class="word-demo"><div class="demo-editor" aria-hidden="true"><i class="wide"></i><i></i><i class="medium"></i><i class="short"></i><span class="demo-caret"></span></div><div class="demo-stat-grid"><div><small>Words</small><strong>428</strong></div><div><small>Characters</small><strong>2,614</strong></div><div><small>Read time</small><strong>2 min</strong></div><div><small>Sentences</small><strong>24</strong></div></div></div>
+        </article>
+        <article class="showcase-slide" id="demo-panel-1" role="tabpanel" aria-labelledby="demo-tab-1" data-demo-slide="1" hidden>
+          <div class="showcase-heading"><div><span class="tag">SaaS finance</span><h2>MRR Calculator</h2></div><a href="/tools/mrr-calculator/">Open tool <span aria-hidden="true">→</span></a></div>
+          <div class="revenue-demo"><div class="hero-result"><small>Monthly recurring revenue</small><strong>$12,250</strong><span>250 customers × $49</span></div><div class="demo-bars" aria-label="Illustrative monthly recurring revenue trend"><i style="--bar:42%"></i><i style="--bar:55%"></i><i style="--bar:64%"></i><i style="--bar:72%"></i><i style="--bar:84%"></i><i style="--bar:96%"></i></div></div>
+        </article>
+        <article class="showcase-slide" id="demo-panel-2" role="tabpanel" aria-labelledby="demo-tab-2" data-demo-slide="2" hidden>
+          <div class="showcase-heading"><div><span class="tag">Automation economics</span><h2>Automation ROI</h2></div><a href="/tools/automation-roi-calculator/">Open tool <span aria-hidden="true">→</span></a></div>
+          <div class="roi-demo"><div class="roi-ring" aria-label="Example first-year ROI: 320 percent"><span><strong>320%</strong><small>First-year ROI</small></span></div><div class="roi-list"><p><span>Monthly net savings</span><strong>$1,400</strong></p><p><span>First-year net benefit</span><strong>$12,800</strong></p><p><span>Setup payback</span><strong>2.9 months</strong></p></div></div>
+        </article>
+        <article class="showcase-slide" id="demo-panel-3" role="tabpanel" aria-labelledby="demo-tab-3" data-demo-slide="3" hidden>
+          <div class="showcase-heading"><div><span class="tag">Contractor planning</span><h2>Project Estimate</h2></div><a href="/tools/contractor-estimate-calculator/">Open tool <span aria-hidden="true">→</span></a></div>
+          <div class="quote-demo"><div class="quote-total"><small>Example estimate</small><strong>$12,750</strong></div><div class="quote-row"><span>Labor</span><i><b style="width:47%"></b></i><strong>$6,000</strong></div><div class="quote-row"><span>Materials</span><i><b style="width:33%"></b></i><strong>$4,200</strong></div><div class="quote-row"><span>Margin</span><i><b style="width:20%"></b></i><strong>$2,550</strong></div></div>
+        </article>
+      </div>
+      <div class="showcase-footer"><span>Runs locally in your browser</span><div class="showcase-progress" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i></div></div>
+    </div>
   </div></section>
   <section class="discovery-section" aria-labelledby="browse-title"><div class="wrap">
     <div class="section-head light-head"><div><span class="eyebrow">Browse by category</span><h2 id="browse-title">Find the right tool for the decision.</h2></div><p>Start with a real business problem. Filter the priority collection or open the complete library of 58 working tools.</p></div>
