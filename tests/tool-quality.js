@@ -60,6 +60,22 @@ const emptyOutput = vm.runInContext(`compute('word-counter', [''])`, context);
 if (!emptyOutput.includes('0 words')) failures.push('word counter: empty text did not return 0 words');
 if (wordOutput.includes('<script>')) failures.push('word counter: user text was not escaped');
 
+const cpmFields = vm.runInContext(`fields('cpm-calculator')`, context);
+if (vm.runInContext(`validateToolValues(${JSON.stringify(cpmFields)}, ['2500', '400000', ''], 'cpm-calculator')`, context)) failures.push('CPM: rejected two valid inputs');
+if (!/exactly two/i.test(vm.runInContext(`validateToolValues(${JSON.stringify(cpmFields)}, ['2500', '400000', '6.25'], 'cpm-calculator')`, context))) failures.push('CPM: did not reject three inputs');
+if (!/exactly two/i.test(vm.runInContext(`validateToolValues(${JSON.stringify(cpmFields)}, ['2500', '', ''], 'cpm-calculator')`, context))) failures.push('CPM: did not reject one input');
+for (const [values, expected] of [
+  [['2500', '400000', ''], '$6.25'],
+  [['2500', '', '6.25'], '400,000'],
+  [['', '400000', '6.25'], '$2,500.00'],
+]) {
+  const output = vm.runInContext(`compute('cpm-calculator', ${JSON.stringify(values)})`, context);
+  if (!output.includes(expected)) failures.push(`CPM: expected ${expected} for ${values.join('|')}`);
+}
+
+const jobOutput = vm.runInContext(`compute('job-profit-calculator', ['18000', '6200', '4800', '900', '350'])`, context);
+for (const expected of ['$5,750.00', '31.94%', '46.94%', 'Overhead allocation']) if (!jobOutput.includes(expected)) failures.push(`job profit: missing ${expected}`);
+
 if (failures.length) {
   console.error(failures.join('\n'));
   process.exit(1);

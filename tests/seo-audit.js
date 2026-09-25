@@ -54,7 +54,11 @@ for (const tool of catalog.tools) {
   }
   if (!graph.some((item) => item['@type'] === 'WebApplication' && item.url === url && item.isAccessibleForFree === true)) errors.push(`${tool.slug}: missing complete WebApplication schema`);
   const breadcrumbs = graph.find((item) => item['@type'] === 'BreadcrumbList');
-  if (!breadcrumbs || breadcrumbs.itemListElement?.length !== 3) errors.push(`${tool.slug}: missing complete BreadcrumbList schema`);
+  if (!breadcrumbs || breadcrumbs.itemListElement?.length !== 4) errors.push(`${tool.slug}: missing complete BreadcrumbList schema`);
+  else {
+    const category = breadcrumbs.itemListElement[2];
+    if (!category?.item?.startsWith('https://toolviking.com/tools/') || category.name === tool.name) errors.push(`${tool.slug}: missing category breadcrumb`);
+  }
 
   const visibleQuestions = [...html.matchAll(/<details><summary>([\s\S]*?)<\/summary><p>([\s\S]*?)<\/p><\/details>/gi)]
     .map((item) => ({ question: strip(item[1]), answer: strip(item[2]) }));

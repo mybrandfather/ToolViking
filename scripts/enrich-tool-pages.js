@@ -16,6 +16,8 @@ const titleOverrides = {
   'utm-builder': 'UTM Builder - Create Campaign Tracking URLs | ToolViking',
   'automation-roi-calculator': 'Automation ROI Calculator - Estimate Savings & Payback | ToolViking',
   'reading-time-calculator': 'Reading Time Calculator - Estimate Article Reading Time | ToolViking',
+  'cpm-calculator': 'CPM Calculator - Cost, Impressions or CPM | ToolViking',
+  'job-profit-calculator': 'Job Profit Calculator - Margin & Markup | ToolViking',
 };
 
 const descriptionOverrides = {
@@ -30,6 +32,8 @@ const descriptionOverrides = {
   'utm-builder': 'Create a campaign URL with utm_source, utm_medium, and utm_campaign parameters. The URL is built locally in your browser.',
   'automation-roi-calculator': 'Estimate monthly savings, first-year net benefit, setup payback, and ROI for a proposed business automation project.',
   'reading-time-calculator': 'Estimate article reading time from word count and reading speed. Paste text and calculate privately in your browser.',
+  'cpm-calculator': 'Calculate CPM, campaign cost, or impressions from any two values. Compare media costs with a free calculator that runs in your browser.',
+  'job-profit-calculator': 'Calculate job profit, total costs, profit margin, and cost markup from revenue, labor, materials, overhead, and other job costs.',
 };
 
 const content = {
@@ -209,6 +213,38 @@ const content = {
       ['How do I calculate automation ROI?', 'Subtract first-year recurring and setup costs from first-year measurable benefit, then divide the net benefit by first-year automation cost and multiply by 100.'],
       ['What costs should I include?', 'Include setup, subscriptions, implementation labor, training, maintenance, monitoring, and other costs required to keep the workflow reliable.'],
       ['How should I value hours saved?', 'Use hours that can realistically be reassigned or avoided and multiply by an appropriate loaded labor cost. Test a conservative case when savings are uncertain.'],
+    ],
+  },
+  'cpm-calculator': {
+    hero: 'Calculate CPM, campaign cost, or impressions by entering any two values and leaving the value you want to solve blank.',
+    notice: 'CPM measures media delivery cost, not campaign profitability. Evaluate reach alongside clicks, conversions, revenue, audience quality, and attribution.',
+    intro: 'Use spend and impressions to calculate CPM, spend and CPM to estimate impressions, or impressions and CPM to estimate campaign cost.',
+    steps: ['Enter exactly two known campaign values.', 'Leave the value you want to calculate blank.', 'Calculate and compare the result with campaigns using the same currency, date range, and impression definition.'],
+    method: 'CPM = advertising spend ÷ impressions × 1,000. Cost = CPM × impressions ÷ 1,000. Impressions = cost ÷ CPM × 1,000.',
+    meaning: 'CPM is the average cost for one thousand recorded ad impressions. It describes delivery efficiency, not the quality or business value of those impressions.',
+    example: '$2,500 in spend across 400,000 impressions equals a $6.25 CPM. At that CPM, a $5,000 budget would buy about 800,000 impressions.',
+    mistakes: 'Do not mix currencies or reporting periods, confuse impressions with reach, or compare platforms without checking viewability, placement, audience, and billing definitions.',
+    when: 'Use it for media planning, display and social campaign comparisons, publisher quotes, sponsorship pricing, and budget scenarios.',
+    faq: [
+      ['How do I calculate CPM?', 'Divide campaign spend by impressions, then multiply by 1,000. For example, $2,500 divided by 400,000 impressions times 1,000 equals $6.25 CPM.'],
+      ['Can I calculate impressions from CPM and budget?', 'Yes. Divide budget by CPM and multiply by 1,000. Leave the impressions field blank and enter the other two values.'],
+      ['Is a lower CPM always better?', 'No. A lower CPM can buy cheaper delivery, but audience relevance, viewability, clicks, conversions, and revenue determine whether the campaign creates value.'],
+    ],
+  },
+  'job-profit-calculator': {
+    hero: 'Calculate job profit, margin, and markup after labor, materials, allocated overhead, and other direct costs.',
+    notice: 'This is a planning estimate, not accounting, tax, legal, or contract advice. Reconcile job costs with actual records and your accounting method.',
+    intro: 'Enter invoiced or expected job revenue, then include every cost attributable to delivering the work. Separate overhead so omissions are easier to spot.',
+    steps: ['Enter job revenue for the same scope and period.', 'Add labor, materials, allocated overhead, and other job costs.', 'Calculate profit, margin, and markup, then compare estimated and actual results.'],
+    method: 'Total cost = labor + materials + overhead + other costs. Profit = revenue − total cost. Margin = profit ÷ revenue × 100. Markup = profit ÷ total cost × 100.',
+    meaning: 'Profit is the amount remaining after entered costs. Margin measures profit as a share of revenue; markup measures profit relative to cost. They are not interchangeable.',
+    example: '$18,000 revenue less $6,200 labor, $4,800 materials, $900 overhead, and $350 other costs leaves $5,750 profit, a 31.9% margin and 46.9% markup.',
+    mistakes: 'Common omissions include owner labor, payroll burden, subcontractors, equipment, travel, permits, disposal, callbacks, warranty work, payment fees, and allocated overhead.',
+    when: 'Use it before quoting, during job-cost reviews, after completion, and when comparing project types, crews, customers, or estimating accuracy.',
+    faq: [
+      ['How do I calculate profit on a job?', 'Add labor, materials, overhead, and other attributable costs, then subtract total cost from job revenue.'],
+      ['What is the difference between margin and markup?', 'Margin divides profit by revenue. Markup divides profit by cost. The same job therefore has different margin and markup percentages.'],
+      ['Should overhead be included in job profit?', 'Yes, when you want the job to contribute fairly to rent, insurance, software, vehicles, supervision, and other operating costs that direct costs alone do not capture.'],
     ],
   },
 };
