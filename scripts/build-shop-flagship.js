@@ -212,7 +212,7 @@ const layout = ({ title, description, canonical, body, schema = '' }) => `<!doct
 <link rel="canonical" href="${canonical}"><link rel="icon" href="/assets/helmet.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css">
 ${schema}
 </head>
-<body>
+<body class="shop-page">
 <a class="skip-link" href="#main">Skip to main content</a>
 <header><nav class="wrap" aria-label="Primary navigation"><a class="brand" href="/" aria-label="ToolViking home"><span class="brand-mark">V</span><span class="brand-name">ToolViking</span></a><div class="links"><a href="/tools/">Tools</a><a href="/dashboards/">Dashboards</a><a href="/skills/">AI Skills</a><a href="/shop/" aria-current="page">Shop</a><a href="/about/">About</a></div></nav></header>
 <main id="main">${body}</main>
